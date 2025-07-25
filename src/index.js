@@ -6,6 +6,9 @@ import k8sImg from "./assets/skills/kubernetes.png";
 import gitlabImg from "./assets/skills/gitlab.png";
 import terraformImg from "./assets/skills/terraform.png";
 import awsImg from "./assets/skills/aws.png";
+import argocdImg from "./assets/skills/argocd.png";
+import jenkinsImg from "./assets/skills/jenkins.png";
+import harborImg from "./assets/skills/harbor.png";
 
 initScrollReveal(targetElements, defaultProps);
 initTiltEffect();
@@ -29,6 +32,18 @@ const skillImages = [
   },
   {
     src: awsImg,
+    description: "Hands-on experience with EC2, EKS, and IAM on AWS for cloud deployment."
+  },
+    {
+    src: argocdImg,
+    description: "Configured CI/CD pipelines and GitOps workflows with GitLab."
+  },
+  {
+    src: jenkinsImg,
+    description: "Automated infrastructure provisioning with Terraform."
+  },
+  {
+    src: harborImg,
     description: "Hands-on experience with EC2, EKS, and IAM on AWS for cloud deployment."
   }
 ];
