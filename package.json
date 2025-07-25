@@ -1,24 +1,24 @@
 {
   "name": "simplefolio",
   "version": "1.0.1",
-  "private": "true",
+  "private": true,
   "description": "A clean, beautiful and responsive portfolio template for Developers!",
   "source": "src/index.html",
-  "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
-  },
+  "homepage": "https://nvlrmdn.github.io/portofolio",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cobiwave/simplefolio"
+    "url": "https://github.com/nvlrmdn/portofolio.git"
+  },
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build src/index.html --dist-dir dist"
   },
   "keywords": [],
-  "author": "Jacobo Martinez",
+  "author": "Noval Ramdani",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cobiwave/simplefolio/issues"
+    "url": "https://github.com/nvlrmdn/portofolio/issues"
   },
-  "homepage": "https://nvlrmdn.github.io/portofolio",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.2",
     "parcel": "^2.8.2",
@@ -30,9 +30,5 @@
     "jquery": "^3.6.3",
     "popper.js": "^1.16.1",
     "vanilla-tilt": "^1.8.0"
-  },
-  "scripts": {
-    "start": "parcel",
-    "build": "parcel build src/index.html --dist-dir dist"
   }
 }
