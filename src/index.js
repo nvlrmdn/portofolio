@@ -1,6 +1,7 @@
 import initScrollReveal from "./scripts/scrollReveal";
 import initTiltEffect from "./scripts/tiltAnimation";
 import { targetElements, defaultProps } from "./data/scrollRevealConfig";
+
 import dockerImg from "./assets/skills/docker.png";
 import k8sImg from "./assets/skills/kubernetes.png";
 import gitlabImg from "./assets/skills/gitlab.png";
@@ -14,6 +15,7 @@ import bashImg from "./assets/skills/bash.png";
 import grafanaImg from "./assets/skills/grafana.png";
 import lokiImg from "./assets/skills/loki.png";
 import prometheusImg from "./assets/skills/prometheus.png";
+
 import work1Img from "./assets/work/work1.png";
 import work2Img from "./assets/work/work2.png";
 import work3Img from "./assets/work/work3.png";
@@ -22,6 +24,7 @@ import work4Img from "./assets/work/work4.png";
 initScrollReveal(targetElements, defaultProps);
 initTiltEffect();
 
+/* === SKILLS CAROUSEL === */
 const skillImages = [
   {
     src: dockerImg,
@@ -86,17 +89,19 @@ function showSkill(index) {
   skillDescEl.textContent = skillImages[index].description;
 }
 
-window.nextImage = () => {
+window.nextSkill = () => {
   currentSkill = (currentSkill + 1) % skillImages.length;
   showSkill(currentSkill);
 };
 
-window.prevImage = () => {
+window.prevSkill = () => {
   currentSkill = (currentSkill - 1 + skillImages.length) % skillImages.length;
   showSkill(currentSkill);
 };
+
 showSkill(currentSkill);
 
+/* === WORK EXPERIENCE CAROUSEL === */
 const workImages = [
   {
     src: work1Img,
@@ -107,7 +112,7 @@ const workImages = [
     description: "Experienced in orchestrating, scaling, and managing applications with Kubernetes."
   },
   {
-    src: work3labImg,
+    src: work3Img,
     description: "Designed CI/CD pipelines and managed repositories effectively using GitLab."
   },
   {
@@ -125,13 +130,14 @@ function showWork(index) {
   workDescEl.textContent = workImages[index].description;
 }
 
-window.nextImage = () => {
+window.nextWork = () => {
   currentWork = (currentWork + 1) % workImages.length;
   showWork(currentWork);
 };
 
-window.prevImage = () => {
+window.prevWork = () => {
   currentWork = (currentWork - 1 + workImages.length) % workImages.length;
   showWork(currentWork);
 };
+
 showWork(currentWork);
