@@ -151,16 +151,20 @@ new Chart(ctx, {
       'Collaboration',
       'Adaptability',
       'Problem Solving',
-      'Time Management'
+      'Time Management and Priority',
+      'Decision Making',
+      'Analytical Thinking',
+      'Critical Thinking',
+      'Creativity',
+      'Leadership and Influencing',
+      'Accountability',
+      'Customer-Oriented Mindset',
+      'Growth Mindset'
     ],
     datasets: [{
       label: 'Soft Skill Proficiency',
-      data: [90, 85, 80, 88, 75],
+      data: [82, 85, 80, 88, 90, 78, 80, 76, 75, 83, 85, 75, 92],
       backgroundColor: [
-        '#aef1f0',
-        '#6be2dc',
-        '#49c9f0',
-        '#2f88d8',
         '#1d4a89'
       ],
       borderRadius: 8,
