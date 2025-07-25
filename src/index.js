@@ -1,6 +1,11 @@
 import initScrollReveal from "./scripts/scrollReveal";
 import initTiltEffect from "./scripts/tiltAnimation";
 import { targetElements, defaultProps } from "./data/scrollRevealConfig";
+import dockerImg from './assets/skills/docker.png';
+import k8sImg from './assets/skills/kubernetes.png';
+import gitlabImg from './assets/skills/gitlab.png';
+import terraformImg from './assets/skills/terraform.png';
+import awsImg from './assets/skills/aws.png';
 
 initScrollReveal(targetElements, defaultProps);
 initTiltEffect();
