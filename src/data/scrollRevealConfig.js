@@ -58,6 +58,41 @@ export const targetElements = [
     },
   },
   {
+    element: "#softSkillChart", // 🎯 Soft Skill Chart
+    animation: {
+      delay: 500,
+      origin: "bottom",
+    },
+  },
+  {
+    element: "#skill-carousel", // 🎯 Hard Skill Image
+    animation: {
+      delay: 500,
+      origin: "bottom",
+    },
+  },
+  {
+    element: "#skill-description", // 🎯 Hard Skill Description
+    animation: {
+      delay: 600,
+      origin: "bottom",
+    },
+  },
+  {
+    element: "#work-carousel", // 🎯 Work Experience Image
+    animation: {
+      delay: 500,
+      origin: "bottom",
+    },
+  },
+  {
+    element: "#work-description", // 🎯 Work Experience Description
+    animation: {
+      delay: 600,
+      origin: "bottom",
+    },
+  },
+  {
     element: ".contact-wrapper",
     animation: {
       delay: 800,
