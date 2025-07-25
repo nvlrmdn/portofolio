@@ -9,6 +9,11 @@ import awsImg from "./assets/skills/aws.png";
 import argocdImg from "./assets/skills/argocd.png";
 import jenkinsImg from "./assets/skills/jenkins.png";
 import harborImg from "./assets/skills/harbor.png";
+import ansibleImg from "./assets/skills/ansible.png";
+import bashImg from "./assets/skills/bash.png";
+import grafanaImg from "./assets/skills/grafana.png";
+import lokiImg from "./assets/skills/loki.png";
+import prometheusImg from "./assets/skills/prometheus.png";
 
 initScrollReveal(targetElements, defaultProps);
 initTiltEffect();
@@ -16,35 +21,55 @@ initTiltEffect();
 const skillImages = [
   {
     src: dockerImg,
-    description: "Efficient in creating, managing, and deploying containerized apps using Docker."
+    description: "Proficient in building, managing, and deploying containerized applications using Docker."
   },
   {
     src: k8sImg,
-    description: "Experienced in deploying and scaling applications using Kubernetes orchestration."
+    description: "Experienced in orchestrating, scaling, and managing applications with Kubernetes."
   },
   {
     src: gitlabImg,
-    description: "Built robust CI/CD pipelines and managed Git repositories using GitLab."
+    description: "Designed CI/CD pipelines and managed repositories effectively using GitLab."
   },
   {
     src: terraformImg,
-    description: "Provisioned cloud resources declaratively using Terraform for reproducible infrastructure."
+    description: "Implemented infrastructure as code by provisioning resources with Terraform."
   },
   {
     src: awsImg,
-    description: "Worked with AWS services like EC2, S3, IAM, and EKS for cloud-native deployments."
+    description: "Hands-on experience with AWS services including EC2, IAM, and EKS for scalable deployments."
   },
   {
     src: argocdImg,
-    description: "Implemented GitOps workflows and continuous deployment using ArgoCD."
+    description: "Applied GitOps principles and automated deployments using ArgoCD."
   },
   {
     src: jenkinsImg,
-    description: "Automated build and deployment pipelines using Jenkins across environments."
+    description: "Developed automated build and deployment pipelines using Jenkins."
   },
   {
     src: harborImg,
-    description: "Managed container image repositories securely with Harbor in private registries."
+    description: "Managed secure container image registries and access control with Harbor."
+  },
+  {
+    src: ansibleImg,
+    description: "Automated server provisioning and configuration management using Ansible."
+  },
+  {
+    src: bashImg,
+    description: "Created Bash scripts for task automation and Linux system operations."
+  },
+  {
+    src: grafanaImg,
+    description: "Built intuitive dashboards and visualized real-time metrics using Grafana."
+  },
+  {
+    src: lokiImg,
+    description: "Collected and queried logs efficiently using Loki for centralized log management."
+  },
+  {
+    src: prometheusImg,
+    description: "Configured Prometheus for system monitoring and proactive alerting."
   }
 ];
 
