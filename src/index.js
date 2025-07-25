@@ -7,23 +7,23 @@ initTiltEffect();
 
 const skillImages = [
   {
-    src: "assets/skills/docker.png",
+    src: "./assets/skills/docker.png",
     description: "Experienced in containerization and image management using Docker."
   },
   {
-    src: "assets/skills/kubernetes.png",
+    src: "./assets/skills/kubernetes.png",
     description: "Skilled in orchestrating scalable applications using Kubernetes."
   },
   {
-    src: "assets/skills/gitlab.png",
+    src: "./assets/skills/gitlab.png",
     description: "Configured CI/CD pipelines and GitOps workflows with GitLab."
   },
   {
-    src: "assets/skills/terraform.png",
+    src: "./assets/skills/terraform.png",
     description: "Automated infrastructure provisioning with Terraform."
   },
   {
-    src: "assets/skills/aws.png",
+    src: "./assets/skills/aws.png",
     description: "Hands-on experience with EC2, EKS, and IAM on AWS for cloud deployment."
   }
 ];
