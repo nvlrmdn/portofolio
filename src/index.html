@@ -36,6 +36,7 @@
 
     <!-- Todo: remove the below script once you finish your portfolio -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
 
   <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
@@ -62,7 +63,7 @@
     <!-- **** About Section **** -->
     <section id="about">
       <div class="container">
-        <h2 class="section-title load-hidden">About me</h2>
+        <h2 class="section-title load-hidden">Introduce My Self</h2>
         <div class="row about-wrapper">
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__image load-hidden">
@@ -109,11 +110,30 @@
         <div class="project-wrapper">
           <h2 class="section-title dark-blue-text">About Me</h2>
 
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Soft Skills Highlight</h3>
+                <div>
+                  <p class="mb-4">
+                    Throughout my professional journey, I have also developed a strong set of soft skills that complement my technical expertise. 
+                    I strive to communicate effectively, collaborate across teams, adapt to dynamic environments, and approach challenges with a solution-oriented mindset. 
+                    These qualities enable me to contribute meaningfully beyond just technical execution.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <canvas id="softSkillChart" width="400" height="300"></canvas>
+              </div>
+            </div>
+          </div>
           <!-- Notice: each .row is a project -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Skills Highlight</h3>
+                <h3 class="project-wrapper__text-title">Hard Skills Highlight</h3>
                 <div>
                   <p class="mb-4">
                     Here are some of the skills I’ve learned and mastered throughout my journey in tech. 

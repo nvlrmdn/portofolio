@@ -105,19 +105,19 @@ showSkill(currentSkill);
 const workImages = [
   {
     src: work1Img,
-    description: "DevOps Engineer."
+    description: "DevOps Engineer, Full Time, January 2024 - Present."
   },
   {
     src: work2Img,
-    description: "Syetem Engineer."
+    description: "System Engineer, Full Time, August 2023 - January 2024."
   },
   {
     src: work3Img,
-    description: "Data Center System and Operation."
+    description: "Data Center System and Operation, Contract Employee, April 2022 - August 2023."
   },
   {
     src: work4Img,
-    description: "Technical Support."
+    description: "Technical Support, Contract Employee, April 2021 - April 2022."
   }
 ];
 
@@ -141,3 +141,67 @@ window.prevWork = () => {
 };
 
 showWork(currentWork);
+
+const ctx = document.getElementById('softSkillChart').getContext('2d');
+new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: [
+      'Communication',
+      'Collaboration',
+      'Adaptability',
+      'Problem Solving',
+      'Time Management'
+    ],
+    datasets: [{
+      label: 'Soft Skill Proficiency',
+      data: [90, 85, 80, 88, 75],
+      backgroundColor: [
+        '#aef1f0',
+        '#6be2dc',
+        '#49c9f0',
+        '#2f88d8',
+        '#1d4a89'
+      ],
+      borderRadius: 8,
+      barThickness: 30,
+    }]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true,
+    plugins: {
+      legend: {
+        display: false
+      },
+      title: {
+        display: false
+      }
+    },
+    scales: {
+      x: {
+        max: 100,
+        ticks: {
+          color: '#555',
+          font: {
+            size: 12
+          }
+        },
+        grid: {
+          color: '#f0f0f0'
+        }
+      },
+      y: {
+        ticks: {
+          color: '#222',
+          font: {
+            weight: 'bold'
+          }
+        },
+        grid: {
+          display: false
+        }
+      }
+    }
+  }
+});
