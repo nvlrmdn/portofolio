@@ -16,35 +16,35 @@ initTiltEffect();
 const skillImages = [
   {
     src: dockerImg,
-    description: "Experienced in containerization and image management using Docker."
+    description: "Efficient in creating, managing, and deploying containerized apps using Docker."
   },
   {
     src: k8sImg,
-    description: "Skilled in orchestrating scalable applications using Kubernetes."
+    description: "Experienced in deploying and scaling applications using Kubernetes orchestration."
   },
   {
     src: gitlabImg,
-    description: "Configured CI/CD pipelines and GitOps workflows with GitLab."
+    description: "Built robust CI/CD pipelines and managed Git repositories using GitLab."
   },
   {
     src: terraformImg,
-    description: "Automated infrastructure provisioning with Terraform."
+    description: "Provisioned cloud resources declaratively using Terraform for reproducible infrastructure."
   },
   {
     src: awsImg,
-    description: "Hands-on experience with EC2, EKS, and IAM on AWS for cloud deployment."
+    description: "Worked with AWS services like EC2, S3, IAM, and EKS for cloud-native deployments."
   },
-    {
+  {
     src: argocdImg,
-    description: "Configured CI/CD pipelines and GitOps workflows with GitLab."
+    description: "Implemented GitOps workflows and continuous deployment using ArgoCD."
   },
   {
     src: jenkinsImg,
-    description: "Automated infrastructure provisioning with Terraform."
+    description: "Automated build and deployment pipelines using Jenkins across environments."
   },
   {
     src: harborImg,
-    description: "Hands-on experience with EC2, EKS, and IAM on AWS for cloud deployment."
+    description: "Managed container image repositories securely with Harbor in private registries."
   }
 ];
 
