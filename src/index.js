@@ -14,6 +14,10 @@ import bashImg from "./assets/skills/bash.png";
 import grafanaImg from "./assets/skills/grafana.png";
 import lokiImg from "./assets/skills/loki.png";
 import prometheusImg from "./assets/skills/prometheus.png";
+import work1Img from "./assets/work/work1.png";
+import work2Img from "./assets/work/work2.png";
+import work3Img from "./assets/work/work3.png";
+import work4Img from "./assets/work/work4.png";
 
 initScrollReveal(targetElements, defaultProps);
 initTiltEffect();
@@ -91,6 +95,43 @@ window.prevImage = () => {
   currentSkill = (currentSkill - 1 + skillImages.length) % skillImages.length;
   showSkill(currentSkill);
 };
-
-// Tampilkan pertama kali
 showSkill(currentSkill);
+
+const workImages = [
+  {
+    src: work1Img,
+    description: "Proficient in building, managing, and deploying containerized applications using Docker."
+  },
+  {
+    src: work2Img,
+    description: "Experienced in orchestrating, scaling, and managing applications with Kubernetes."
+  },
+  {
+    src: work3labImg,
+    description: "Designed CI/CD pipelines and managed repositories effectively using GitLab."
+  },
+  {
+    src: work4Img,
+    description: "Implemented infrastructure as code by provisioning resources with Terraform."
+  }
+];
+
+let currentWork = 0;
+const workImgEl = document.getElementById("work-carousel");
+const workDescEl = document.getElementById("work-description");
+
+function showWork(index) {
+  workImgEl.src = workImages[index].src;
+  workDescEl.textContent = workImages[index].description;
+}
+
+window.nextImage = () => {
+  currentWork = (currentWork + 1) % workImages.length;
+  showWork(currentWork);
+};
+
+window.prevImage = () => {
+  currentWork = (currentWork - 1 + workImages.length) % workImages.length;
+  showWork(currentWork);
+};
+showWork(currentWork);
