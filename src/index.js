@@ -105,19 +105,19 @@ showSkill(currentSkill);
 const workImages = [
   {
     src: work1Img,
-    description: "Proficient in building, managing, and deploying containerized applications using Docker."
+    description: "DevOps Engineer."
   },
   {
     src: work2Img,
-    description: "Experienced in orchestrating, scaling, and managing applications with Kubernetes."
+    description: "Syetem Engineer."
   },
   {
     src: work3Img,
-    description: "Designed CI/CD pipelines and managed repositories effectively using GitLab."
+    description: "Data Center System and Operation."
   },
   {
     src: work4Img,
-    description: "Implemented infrastructure as code by provisioning resources with Terraform."
+    description: "Technical Support."
   }
 ];
 
